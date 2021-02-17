@@ -1,0 +1,31 @@
+/* Soluzione esercizio 1 */
+.ex-1-square{
+  transition: background-color 2s;
+}
+
+.ex-1-square:hover{
+  background-color: red;
+}
+
+/* Soluzione esercizio 2 */
+.ex-2-square{
+  animation:
+}
+
+/* Soluzione esercizio 3 */
+.ex-3-square{
+  transition: border-radius 1s ease;
+}
+
+.ex-3-square:hover{
+  border-radius: 50%;
+}
+
+/* Soluzione esercizio 4 */
+.ex-4-square{
+  transition: opacity 1.5s ease;
+}
+
+.ex-4-square:hover{
+  opacity: 0;
+}
