@@ -8,8 +8,14 @@
 }
 
 /* Soluzione esercizio 2 */
-.ex-2-square{
-  animation:
+.well .ex-2-square{
+  /* animation-name: streatching;
+  animation-duration: 4s; */
+  transition: width 1.5s ease-in-out;
+}
+
+.well .ex-2-square:active{
+  width: calc(100% - 38px);
 }
 
 /* Soluzione esercizio 3 */
@@ -23,9 +29,91 @@
 
 /* Soluzione esercizio 4 */
 .ex-4-square{
-  transition: opacity 1.5s ease;
+  transition: opacity 1.5s;
 }
 
 .ex-4-square:hover{
   opacity: 0;
+}
+
+/* Soluzione esercizio 5 */
+.well > .ex-5-square{
+  transition: transform 1s;
+}
+
+.well > .ex-5-square:hover{
+  transform: scale(2);
+}
+
+.well > .ex-5-square:active{
+transform: scale(0.25);
+}
+
+
+/* Soluzione esercizio 6 */
+.well > .ex-6-img:hover{
+  filter:grayscale(9);
+}
+
+/* Soluzione esercizio 7 */
+.well > .ex-7-img{
+  transition: filter 1s ease;
+}
+
+.well > .ex-7-img:hover{
+  filter:grayscale(0.9);
+}
+
+/* Soluzione esercizio 8 */
+.well > .ex-8-img{
+  transition: filter 1.5s, border-radius 1.5s;
+}
+
+.well > .ex-8-img:hover{
+  filter:sepia(0.9);
+  border-radius: 20px;
+}
+
+/* Soluzione esercizio 9 */
+.well > .ex-9-img{
+ transition: border-radius 2s, transform 2s, filter 2s;
+}
+
+.well > .ex-9-img:hover{
+  border-radius: 20px;
+  transform: scale(1.5);
+  filter: sepia(0.9);
+}
+
+/* Soluzione esercizio 10 */
+.well .ex-10-icon{
+  animation-name: spinner;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spinner {
+  from{transform: rotate(0deg);}
+  50% {transform: rotate(-180deg);}
+  to{transform: rotate(-360deg);}
+}
+
+/* Soluzione esercizio 11 */
+.well .ex-11-icon{
+  transition: transform 2s ease-in;
+}
+
+.well .ex-11-icon:hover{
+  transform: rotate(360deg);
+}
+
+/* Soluzione esercizio 12 */
+
+.well .ex-12-icon{
+
+}
+
+.well .ex-12-icon:hover{
+
 }
