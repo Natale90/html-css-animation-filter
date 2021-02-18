@@ -88,7 +88,7 @@ transform: scale(0.25);
 /* Soluzione esercizio 10 */
 .well .ex-10-icon{
   animation-name: spinner;
-  animation-duration: 3s;
+  animation-duration: 1s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
@@ -101,7 +101,7 @@ transform: scale(0.25);
 
 /* Soluzione esercizio 11 */
 .well .ex-11-icon{
-  transition: transform 2s ease-in;
+  transition: transform 0.5s ease-in;
 }
 
 .well .ex-11-icon:hover{
@@ -110,10 +110,25 @@ transform: scale(0.25);
 
 /* Soluzione esercizio 12 */
 
-.well .ex-12-icon{
+.ex-12-button:hover .ex-12-top-white{
+  position: absolute;
+  animation: topwhite 1.5s ease;
 
 }
 
-.well .ex-12-icon:hover{
+@keyframes topwhite {
+  0% { top: -10%; left: 10%;}
+  50% { top:-10%; left: calc(100% - 60px);}
+  100% { top: -10%; left: 10%;}
+}
 
+.ex-12-button:hover .ex-12-bottom-white{
+  position: absolute;
+  animation: bottomwhite 1.5s ease;
+}
+
+@keyframes bottomwhite {
+  0% { bottom: -10%; right: 10%;}
+  50% { bottom:-10%; right: calc(100% - 60px);}
+  100% { bottom: -10%; right: 10%;}
 }
