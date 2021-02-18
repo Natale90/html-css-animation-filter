@@ -112,11 +112,11 @@ transform: scale(0.25);
 
 .ex-12-button:hover .ex-12-top-white{
   position: absolute;
-  animation: topwhite 1.5s ease;
+  animation: topwhite12 1.5s ease;
 
 }
 
-@keyframes topwhite {
+@keyframes topwhite12 {
   0% { top: -10%; left: 10%;}
   50% { top:-10%; left: calc(100% - 60px);}
   100% { top: -10%; left: 10%;}
@@ -124,11 +124,48 @@ transform: scale(0.25);
 
 .ex-12-button:hover .ex-12-bottom-white{
   position: absolute;
-  animation: bottomwhite 1.5s ease;
+  animation: bottomwhite12 1.5s ease;
 }
 
-@keyframes bottomwhite {
+@keyframes bottomwhite12 {
   0% { bottom: -10%; right: 10%;}
   50% { bottom:-10%; right: calc(100% - 60px);}
   100% { bottom: -10%; right: 10%;}
+}
+
+
+/* Soluzione esercizio 13 */
+/* .ex-13-top-white, .ex-13-bottom-white{
+  background-color: red;
+} */
+
+.ex-13-button:hover .ex-13-top-white{
+  position: absolute;
+  animation: topwhite13 1.5s ease;
+  animation-iteration-count: 2;
+
+}
+
+@keyframes topwhite13 {
+  0% { top: -10px; left: 10%;}
+  25% { top:-10px; left: calc(100% - 30px);}
+  45%{ top: calc(100% - 10px); left: calc(100% - 30px);}
+  65% {top: calc(100% - 10px); left: -30px}
+  75% {top: -10px; left: -30px;}
+  100% { top: -10px; left: 10%;}
+}
+
+.ex-13-button:hover .ex-13-bottom-white{
+  position: absolute;
+  animation: bottomwhite13 1.5s linear;
+  animation-iteration-count: 2;
+}
+
+@keyframes bottomwhite13 {
+  0% { bottom: -10px; right: 10%;}
+  25% { bottom:-10px; right: calc(100% - 30px);}
+  45% {bottom: calc(100% - 10px); right: calc(100% - 30px);}
+  65% {bottom: calc(100% - 10px); right:-30px;}
+  85% {bottom: -10px; right: -30px;}
+  100% { bottom: -10px; right: 10%;}
 }
